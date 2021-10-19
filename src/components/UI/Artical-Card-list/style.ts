@@ -7,10 +7,4 @@ export const CardListContainer = styled.section`
   background: #F8F8FF;
   gap: 1.5rem;
   max-width: 69%;
-  &.data-card {
-    width: 412px;
-    height: 355px;
-    flex-direction: column;
-    align-items: baseline;
-  }
 `;

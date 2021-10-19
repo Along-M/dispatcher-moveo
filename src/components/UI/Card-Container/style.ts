@@ -10,6 +10,7 @@ export const CardContainer = styled.div`
   border-radius: 20px;
   overflow: hidden;
   height: 15rem;
+  max-width: 90%;
   &.data-card {
     width: 412px;
     height: 355px;

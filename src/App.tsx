@@ -1,10 +1,8 @@
 import * as React from "react";
 import "./App.css";
-import Button from "./components/UI/Button/Button";
-import StoryCard from "./components/UI/Artical-Card/ArticalCard";
-import { ButtonTypes } from "./components/UI/types";
-import DataCard from "./components/UI/Data-Card/DataCard";
 import ArticalCardList from "./components/UI/Artical-Card-list/ArticalCardList";
+import DataCardList from "./components/UI/Data-Card-list/DataCardList";
+import MainBodyCointainer from "./components/UI/Main-container/MainBodyContainer";
 
 function App() {
   const Data = {
@@ -49,26 +47,12 @@ function App() {
     ],
   };
 
-  // const Cards = Data.articles.map((artical, index) => {
-  //   return (
-  //     <StoryCard
-  //       title={artical.title}
-  //       subTitle={"walla.com"}
-  //       tagContent={artical.source.id}
-  //       cardContent={artical.content}
-  //       imgUrl={artical.urlToImage}
-  //     ></StoryCard>
-  //   );
-  // });
-
   return (
     <>
-      {/* <Button variant={ButtonTypes.PRIMARY} withIcon={true}>
-        test children
-      </Button> */}
-      {/* {Cards} */}
-      {/* <DataCard title={"Sources"}></DataCard> */}
-      <ArticalCardList data={Data} />
+      <MainBodyCointainer>
+        <ArticalCardList data={Data} />
+        <DataCardList></DataCardList>
+      </MainBodyCointainer>
     </>
   );
 }
