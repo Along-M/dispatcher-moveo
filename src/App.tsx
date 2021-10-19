@@ -1,7 +1,7 @@
 import * as React from "react";
 import "./App.css";
-import ArticalCardList from "./components/UI/Artical-Card-list/ArticalCardList";
-import DataCardList from "./components/UI/Data-Card-list/DataCardList";
+import ArticalCardList from "./components/UI/Cards/Artical-Card-list/ArticalCardList";
+import DataCardList from "./components/UI/Cards/Data-Card-list/DataCardList";
 import MainBodyCointainer from "./components/UI/Main-container/MainBodyContainer";
 
 function App() {

@@ -8,8 +8,7 @@ export const CardHeaderContainer = styled.div`
 export const CardContentContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0 1rem 0 1rem;
-  /* gap: 1rem; */
+  margin: 1rem;
   height: 13rem;
   justify-content: space-between;
 `
@@ -55,6 +54,7 @@ export const Img = styled.img`
   width: 242px;
   height: 100%;
   object-fit: cover;
+  border-radius: 20px 0 0 20px;
 `
 
 export const CardContent = styled.p`

@@ -14,7 +14,7 @@ export const DataCardTitle = styled.h2`
 `;
 
 export const DataCardDivider = styled.div`
-  background: #5A5A89;
+  background: #E5E5E5;
   border: 4px solid #5A5A89;
   border-radius: 20px;
   width: 20px;
