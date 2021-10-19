@@ -2,6 +2,7 @@ import { useState } from "react";
 import DropdownArrow from "../../../assets/icons/dropdown-arrow.svg";
 import { FilterCategories } from "../types";
 import {
+  FilterCointainer,
   DropdownSelect,
   FilterHeader,
   OptionsContainer,
@@ -25,7 +26,7 @@ const Filter = ({ children, type, dropDownOptions }: FilterProps) => {
     return <Option>{option}</Option>;
   });
   return (
-    <>
+    <FilterCointainer>
       <DropdownSelect onClick={toggleFilterOptions}>
         <FilterHeader>{type}</FilterHeader>
         <DropdownArrowIcon src={DropdownArrow} />
@@ -45,7 +46,7 @@ const Filter = ({ children, type, dropDownOptions }: FilterProps) => {
           <Option>audi</Option>
         </OptionsContainer>
       )}
-    </>
+    </FilterCointainer>
   );
 };
 

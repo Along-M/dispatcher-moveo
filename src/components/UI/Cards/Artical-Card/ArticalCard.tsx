@@ -1,5 +1,6 @@
 import * as React from "react";
-import CardContainer from "../Card-Container/CardContainer";
+// import CardContainer from "../Card-Container/CardContainer";
+import { CardContainer } from "../../containers";
 import { ButtonTypes, CardTypes } from "../../types";
 import {
   CardContentContainer,
@@ -33,7 +34,7 @@ const ArticalCard = ({
   subTitle,
 }: StoryCardProps) => {
   return (
-    <CardContainer type={CardTypes.STORY}>
+    <CardContainer>
       <Img src={imgUrl} />
       <CardContentContainer>
         <CardHeaderContainer>

@@ -2,10 +2,14 @@ import * as React from "react";
 import "./App.css";
 import ArticalCardList from "./components/UI/Cards/Artical-Card-list/ArticalCardList";
 import DataCardList from "./components/UI/Cards/Data-Card-list/DataCardList";
-import { FilterContainer } from "./components/UI/Filter-container/style";
 import Filter from "./components/UI/Filter/Filter";
-import MainBodyCointainer from "./components/UI/Main-container/MainBodyContainer";
+import {
+  MainBodyCointainer,
+  CardsContainer,
+  FiltersContainer,
+} from "./components/UI/containers";
 import { FilterCategories } from "./components/UI/types";
+import Header from "./components/UI/Header/Header";
 
 function App() {
   const Data = {
@@ -52,16 +56,17 @@ function App() {
 
   return (
     <>
+      <Header />
       <MainBodyCointainer>
-        <FilterContainer>
+        <FiltersContainer>
           <Filter type={FilterCategories.SOURCES} />
           <Filter type={FilterCategories.CATEGORY} />
           <Filter type={FilterCategories.COUNTRY} />
-        </FilterContainer>
-        <section>
+        </FiltersContainer>
+        <CardsContainer>
           <ArticalCardList data={Data} />
           <DataCardList></DataCardList>
-        </section>
+        </CardsContainer>
       </MainBodyCointainer>
     </>
   );

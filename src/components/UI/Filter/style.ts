@@ -1,25 +1,10 @@
 import styled from "styled-components";
-// import DropdownArrow from "../../../assets/icons/dropdown-arrow.svg";
 
 
-
-// export const FilterCointainer = styled.div`
-//   width: 175px;
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: space-around; 
-//   align-items: center;
-//   height: 47px;
-//   font-family: Roboto;
-//   font-style: normal;
-//   font-weight: 500;
-//   font-size: 14px;
-//   line-height: 1.4rem;
-//   color: white;
-//   border-radius: 10px;
-//   background: #ffff;
-//   justify-content: end;
-// `
+export const FilterCointainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`
 
 
 export const DropdownSelect = styled.div`
@@ -45,7 +30,7 @@ export const DropdownArrowIcon = styled.img`
   `
   
   
-export const OptionsContainer = styled.div`
+export const OptionsContainer = styled.span`
     display:flex;
     flex-direction: column;
     height: 125px;
@@ -63,7 +48,7 @@ export const OptionsContainer = styled.div`
   }
   `;
 
-export const Option = styled.div`
+export const Option = styled.option`
   font-family: Mulish;
   font-style: normal;
   font-weight: normal;
