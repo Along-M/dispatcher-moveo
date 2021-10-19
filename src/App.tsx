@@ -2,7 +2,10 @@ import * as React from "react";
 import "./App.css";
 import ArticalCardList from "./components/UI/Cards/Artical-Card-list/ArticalCardList";
 import DataCardList from "./components/UI/Cards/Data-Card-list/DataCardList";
+import { FilterContainer } from "./components/UI/Filter-container/style";
+import Filter from "./components/UI/Filter/Filter";
 import MainBodyCointainer from "./components/UI/Main-container/MainBodyContainer";
+import { FilterCategories } from "./components/UI/types";
 
 function App() {
   const Data = {
@@ -50,8 +53,15 @@ function App() {
   return (
     <>
       <MainBodyCointainer>
-        <ArticalCardList data={Data} />
-        <DataCardList></DataCardList>
+        <FilterContainer>
+          <Filter type={FilterCategories.SOURCES} />
+          <Filter type={FilterCategories.CATEGORY} />
+          <Filter type={FilterCategories.COUNTRY} />
+        </FilterContainer>
+        <section>
+          <ArticalCardList data={Data} />
+          <DataCardList></DataCardList>
+        </section>
       </MainBodyCointainer>
     </>
   );

@@ -35,6 +35,7 @@ const ArticalCardList = ({ children, data }: ArticalCardListProps) => {
   });
   return (
     <CardListContainer>
+      {/* add total results */}
       {/* {<StoryCard></StoryCard>} */}
       {StoryCardsToDisplay}
     </CardListContainer>

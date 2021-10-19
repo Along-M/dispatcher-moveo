@@ -7,4 +7,5 @@ export const CardListContainer = styled.section`
   background: #F8F8FF;
   gap: 1.5rem;
   max-width: 69%;
+  overflow: scroll;
 `;

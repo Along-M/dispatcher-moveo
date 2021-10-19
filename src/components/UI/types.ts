@@ -10,4 +10,9 @@ export enum CardTypes  {
     STORY = "story-card",
     DATA = "data-card",
   };
-
+  
+export enum FilterCategories  {
+      SOURCES = "Sources",
+      CATEGORY = "Category",
+      COUNTRY = "Country",
+    };
