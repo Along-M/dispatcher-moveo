@@ -6,3 +6,8 @@ export enum ButtonTypes  {
     TEXTBTN = "text-transparent-btn",
   };
 
+export enum CardTypes  {
+    STORY = "story-card",
+    DATA = "data-card",
+  };
+
