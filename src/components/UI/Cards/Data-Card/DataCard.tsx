@@ -14,6 +14,7 @@ const DataCard = ({ children, title }: DataCardProps) => {
     <CardContainer className="data-card">
       <DataCardTitle>{title}</DataCardTitle>
       <DataCardDivider />
+      {children}
     </CardContainer>
   );
 };

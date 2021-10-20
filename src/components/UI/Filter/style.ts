@@ -31,7 +31,7 @@ export const DropdownSelect = styled.div`
   &.nav-bar-filter {
     border-radius: 0px 10px 10px 0;
     justify-content: space-evenly;
-    width: 100%;
+    /* width: 100%; */
     margin:0;
     height: 100%;
   }

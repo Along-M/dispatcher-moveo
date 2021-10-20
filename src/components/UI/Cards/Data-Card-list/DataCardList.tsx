@@ -1,6 +1,7 @@
 import * as React from "react";
 import { CardListContainer } from "./style";
 import DataCard from "../Data-Card/DataCard";
+import Chart from "../../Charts/Chart";
 
 type data = {
   grpah: string;
@@ -14,7 +15,9 @@ export interface DataCardListProps {
 const DataCardList = ({ children, data }: DataCardListProps) => {
   return (
     <CardListContainer>
-      <DataCard title={"Sources"}></DataCard>
+      <DataCard title={"Sources"}>
+        <Chart />
+      </DataCard>
       <DataCard title={"Dates"}></DataCard>
       <DataCard title={"Tags"}></DataCard>
     </CardListContainer>
