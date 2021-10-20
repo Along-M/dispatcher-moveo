@@ -15,4 +15,5 @@ export enum FilterCategories  {
       SOURCES = "Sources",
       CATEGORY = "Category",
       COUNTRY = "Country",
+      TOP_HEADLINES = "Top Headlines"
     };

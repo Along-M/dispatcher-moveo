@@ -59,9 +59,9 @@ function App() {
       <Header />
       <MainBodyCointainer>
         <FiltersContainer>
-          <Filter type={FilterCategories.SOURCES} />
-          <Filter type={FilterCategories.CATEGORY} />
           <Filter type={FilterCategories.COUNTRY} />
+          <Filter type={FilterCategories.CATEGORY} />
+          <Filter type={FilterCategories.SOURCES} />
         </FiltersContainer>
         <CardsContainer>
           <ArticalCardList data={Data} />
