@@ -2,22 +2,7 @@ import styled from "styled-components";
 
 
 export const FilterCointainer = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  &.nav-bar-filter-container {
-    height: 3rem;
-    width: 39%;
-  }
-`
-
-
-export const DropdownSelect = styled.div`
   width: 175px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   height: 47px;
   font-family: Roboto;
   font-style: normal;
@@ -27,11 +12,23 @@ export const DropdownSelect = styled.div`
   color: white;
   border-radius: 10px;
   background: #ffff;
-  margin-bottom: 6.5px;
+  z-index: 1;
+  &.nav-bar-filter-container {
+    height: 3rem;
+    width: 50%;
+  }
+`
+
+
+export const DropdownSelect = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 47px;
+  border-radius: 10px;
   &.nav-bar-filter {
     border-radius: 0px 10px 10px 0;
     justify-content: space-evenly;
-    /* width: 100%; */
     margin:0;
     height: 100%;
   }
@@ -39,17 +36,13 @@ export const DropdownSelect = styled.div`
 
 export const DropdownArrowIcon = styled.img`
   margin-right: 10px;
-  `
-  
-  
+  ` 
 export const OptionsContainer = styled.div`
-    display:flex;
-    flex-direction: column;
     height: 125px;
-    width:175px;
     background: white;
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: scroll;
+    margin-top:5px;
     &::-webkit-scrollbar {
     background: none;
     width: 6px;
@@ -87,7 +80,6 @@ export const FilterHeader = styled.span`
     margin-left: 23px;
     &.nav-bar-filter-header {
     margin:0;
-  
   }
 `
 

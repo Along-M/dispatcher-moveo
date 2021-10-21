@@ -4,16 +4,15 @@ import styled from "styled-components";
 export const SearchContainer = styled.div`
   display: flex;
   align-items: center;
-  width: 74%;
-  
-  
+  width: 73.44%;
+  z-index:2;
   `
-
 export const SearchInputContainer = styled.div`
   display: flex;
-  width: 30%;
+  width: 40%;
   background: white;
   border-radius: 10px;
+  /* margin-left:3.4rem; */
 `
 
 export const SearchInput = styled.input`

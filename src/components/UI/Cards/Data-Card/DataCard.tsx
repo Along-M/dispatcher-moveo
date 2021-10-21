@@ -1,8 +1,9 @@
 import * as React from "react";
-// import CardContainer from "../Card-Container/CardContainer";
 import { CardContainer } from "../../containers";
-import { CardTypes } from "../../types";
 import { DataCardTitle, DataCardDivider } from "./style";
+import { NoDataFoundTypes } from "../../types";
+
+import NoData from "../../No-data-gif/NoData";
 
 export interface DataCardProps {
   children?: React.ReactChild | React.ReactChild[];
@@ -14,7 +15,8 @@ const DataCard = ({ children, title }: DataCardProps) => {
     <CardContainer className="data-card">
       <DataCardTitle>{title}</DataCardTitle>
       <DataCardDivider />
-      {children}
+      <NoData type={NoDataFoundTypes.DATACARD} />
+      {/* {children} */}
     </CardContainer>
   );
 };

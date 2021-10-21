@@ -3,23 +3,23 @@ import { CardListContainer } from "./style";
 import DataCard from "../Data-Card/DataCard";
 import Chart from "../../Charts/Chart";
 
-type data = {
-  grpah: string;
-};
-
 export interface DataCardListProps {
   children?: React.ReactChild | React.ReactChild[];
-  data?: data;
+  // data?: data;
 }
 
-const DataCardList = ({ children, data }: DataCardListProps) => {
+const DataCardList = ({ children }: DataCardListProps) => {
   return (
     <CardListContainer>
-      <DataCard title={"Sources"}>
-        <Chart />
+      <DataCard title="Sources">
+        <Chart type="pie" />
       </DataCard>
-      <DataCard title={"Dates"}></DataCard>
-      <DataCard title={"Tags"}></DataCard>
+      <DataCard title="Dates">
+        <Chart type="lineChart" />
+      </DataCard>
+      <DataCard title="Tags">
+        <Chart type="bullet" />
+      </DataCard>
     </CardListContainer>
   );
 };

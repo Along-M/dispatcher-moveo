@@ -9,7 +9,7 @@ export const CardContainer = styled.div`
   box-shadow: 0px 32px 64px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
   height: 15rem;
-  max-width: 90%;
+  max-width: 100%;
   &.data-card {
     width: 412px;
     height: 355px;

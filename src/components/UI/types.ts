@@ -16,4 +16,9 @@ export enum FilterCategories  {
       CATEGORY = "Category",
       COUNTRY = "Country",
       TOP_HEADLINES = "Top Headlines"
-    };
+  };
+
+  export enum NoDataFoundTypes  {
+      DATACARD = "No-data-found",
+      ARTICALCARD = "No-articals-found",
+  };

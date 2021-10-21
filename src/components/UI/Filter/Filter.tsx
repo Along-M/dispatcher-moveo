@@ -14,7 +14,7 @@ export interface FilterProps {
   dropDownOptions?: string[];
   children?: React.ReactChild | React.ReactChild[];
   type?: FilterCategories;
-  variant?: string;
+  variant: string;
 }
 
 const Filter = ({ children, type, dropDownOptions, variant }: FilterProps) => {
@@ -33,7 +33,7 @@ const Filter = ({ children, type, dropDownOptions, variant }: FilterProps) => {
         <DropdownArrowIcon src={DropdownArrow} />
       </DropdownSelect>
       {isFilterOpen && (
-        <OptionsContainer>
+        <OptionsContainer className="option-container">
           <Option>audi</Option>
           <Option>audi</Option>
           <Option>audi</Option>

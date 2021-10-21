@@ -1,14 +1,14 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import DataCardList, { DataCardListProps } from "./DataCardList";
+import CardsHeaders, { CardsHeadersProps } from "./CardsHeaders";
 
 export default {
-  component: DataCardList,
-  title: "Components/DataCardlist",
+  component: CardsHeaders,
+  title: "Components/CardsHeaders",
 } as Meta;
 
 // args in TS way
-const Template: Story<DataCardListProps> = (args) => <DataCardList {...args} />;
+const Template: Story<CardsHeadersProps> = (args) => <CardsHeaders {...args} />;
 
 export const V1 = Template.bind({});
 V1.args = {

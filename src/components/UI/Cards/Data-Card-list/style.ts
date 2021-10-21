@@ -6,5 +6,5 @@ export const CardListContainer = styled.section`
   align-items: center;
   background: #F8F8FF;
   gap: 1.5rem;
-  max-width: 29%;
+  /* max-width: 29%; */
 `;

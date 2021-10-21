@@ -1,6 +1,8 @@
 import * as React from "react";
 import { CardListContainer } from "./style";
 import ArticalCard from "../Artical-Card/ArticalCard";
+import { NoDataFoundTypes } from "../../types";
+import NoData from "../../No-data-gif/NoData";
 
 type data = {
   status: string;
@@ -35,9 +37,8 @@ const ArticalCardList = ({ children, data }: ArticalCardListProps) => {
   });
   return (
     <CardListContainer>
-      {/* add total results */}
-      {/* {<StoryCard></StoryCard>} */}
       {StoryCardsToDisplay}
+      {/* <NoData type={NoDataFoundTypes.ARTICALCARD} /> */}
     </CardListContainer>
   );
 };

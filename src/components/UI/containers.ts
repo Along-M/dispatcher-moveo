@@ -12,12 +12,14 @@ export const FiltersContainer = styled.section`
   display: flex;
   max-width: 100%;
   gap: 1.25rem;
+  border-bottom: 1px solid #D9DBE9;
+  padding:20px 0;
 `;
-
 
 export const CardsContainer = styled.section`
   display: flex;
   max-width: 100%;
+  justify-content: space-between;
 `;
 
 export const CardContainer = styled.div`
@@ -29,7 +31,7 @@ export const CardContainer = styled.div`
   box-shadow: 0px 32px 64px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
   height: 15rem;
-  max-width: 90%;
+  max-width: 100%;
   &.data-card {
     width: 412px;
     height: 355px;
