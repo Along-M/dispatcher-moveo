@@ -1,11 +1,17 @@
 import * as React from "react";
-import { HeaderContainer } from "../containers";
-import { Icon, IconContainer, RightIconsContainer } from "./style";
-import logoIcon from "../../../assets/icons/LOGO.svg";
+import { HeaderContainer } from "./style";
+import {
+  Icon,
+  LogoContainer,
+  RightIconsContainer,
+  UserAvatarDiv,
+} from "./style";
+// import logoIcon from "../../../assets/icons/LOGO.svg";
+import logoIcon from "../../../assets/icons/DispatcherLogo.svg";
 import userAvataIcon from "../../../assets/icons/UserAvatar.svg";
 import settingsIcon from "../../../assets/icons/settings.svg";
 import notificationIcon from "../../../assets/icons/notifications.svg";
-import Search from "../Serach/Search";
+import Search from "../Search/Search";
 
 export interface HeaderProps {
   children?: React.ReactChild | React.ReactChild[];
@@ -14,14 +20,15 @@ export interface HeaderProps {
 const Header = ({ children }: HeaderProps) => {
   return (
     <HeaderContainer>
-      <IconContainer>
+      <LogoContainer>
         <Icon src={logoIcon} />
-      </IconContainer>
+      </LogoContainer>
       <Search></Search>
       <RightIconsContainer>
         <Icon src={settingsIcon} className="settings-icon" />
         <Icon src={notificationIcon} className="notification-icon" />
-        <Icon src={userAvataIcon} className="user-avatar-icon" />
+        <UserAvatarDiv>AG</UserAvatarDiv>
+        {/* <Icon src={userAvataIcon} className="user-avatar-icon" /> */}
       </RightIconsContainer>
     </HeaderContainer>
   );

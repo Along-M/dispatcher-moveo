@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const DataCardTitle = styled.h2`
-  font-family: Roboto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;

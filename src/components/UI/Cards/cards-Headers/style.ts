@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CardsHeader = styled.h2`
-  font-family: Roboto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -10,7 +10,7 @@ export const CardsHeader = styled.h2`
 `
 
 export const CardsNumberOfSearchResults = styled.p`
-  font-family: Roboto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;

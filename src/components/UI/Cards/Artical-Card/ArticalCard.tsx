@@ -1,6 +1,5 @@
 import * as React from "react";
-// import CardContainer from "../Card-Container/CardContainer";
-import { CardContainer } from "../../containers";
+import { CardContainer } from "../Card-Container/style";
 import { ButtonTypes, CardTypes } from "../../types";
 import {
   CardContentContainer,

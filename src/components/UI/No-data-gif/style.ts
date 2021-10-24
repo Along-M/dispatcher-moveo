@@ -12,7 +12,7 @@ export const NoArticalIcon = styled.img`
     `
   
 export const NoDataText = styled.p`
-    font-family: Roboto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;

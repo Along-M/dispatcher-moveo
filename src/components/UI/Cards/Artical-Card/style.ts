@@ -14,7 +14,7 @@ export const CardContentContainer = styled.div`
 `
 
 export const Title = styled.h2`
-  font-family: Roboto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -26,7 +26,7 @@ export const Title = styled.h2`
 
 
 export const SubTitle = styled.h4`
-  font-family: Roboto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -37,7 +37,7 @@ export const SubTitle = styled.h4`
 
 export const Date = styled.h4`
   margin: 0;
-  font-family: Roboto; 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
   font-style: normal;
   font-weight: normal;
   font-size: 14px;

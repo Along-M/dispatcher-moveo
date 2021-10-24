@@ -1,5 +1,5 @@
 import * as React from "react";
-import { CardContainer } from "../../containers";
+import { CardContainer } from "../Card-Container/style";
 import { DataCardTitle, DataCardDivider } from "./style";
 import { NoDataFoundTypes } from "../../types";
 
@@ -16,7 +16,7 @@ const DataCard = ({ children, title }: DataCardProps) => {
       <DataCardTitle>{title}</DataCardTitle>
       <DataCardDivider />
       <NoData type={NoDataFoundTypes.DATACARD} />
-      {/* {children} */}
+      {/* {children}§ */}
     </CardContainer>
   );
 };

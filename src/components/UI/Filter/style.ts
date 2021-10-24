@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const FilterCointainer = styled.div`
   width: 175px;
   height: 47px;
-  font-family: Roboto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -14,8 +14,9 @@ export const FilterCointainer = styled.div`
   background: #ffff;
   z-index: 1;
   &.nav-bar-filter-container {
-    height: 3rem;
-    width: 50%;
+    /* height: 3rem; */
+    width: 40%;
+    /* height: 50px; */
   }
 `
 
@@ -26,23 +27,24 @@ export const DropdownSelect = styled.div`
   align-items: center;
   height: 47px;
   border-radius: 10px;
-  &.nav-bar-filter {
+  padding: 0 15px;
+  /* &.nav-bar-filter {
     border-radius: 0px 10px 10px 0;
     justify-content: space-evenly;
     margin:0;
     height: 100%;
-  }
+  } */
 `;
 
 export const DropdownArrowIcon = styled.img`
-  margin-right: 10px;
+  /* margin-right: 10px; */
   ` 
 export const OptionsContainer = styled.div`
     height: 125px;
     background: white;
     border-radius: 5px;
     overflow: scroll;
-    margin-top:5px;
+    margin-top: 5px;
     &::-webkit-scrollbar {
     background: none;
     width: 6px;
@@ -71,15 +73,11 @@ export const Option = styled.option`
   `;
 
 export const FilterHeader = styled.span`
-    font-family: Roboto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 22px;
     color: #5A5A89;
-    margin-left: 23px;
-    &.nav-bar-filter-header {
-    margin:0;
-  }
 `
 

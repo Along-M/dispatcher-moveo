@@ -1,6 +1,6 @@
 import ArrowRightIcon from "../../../assets/icons/Arrow-Right.svg";
 import { ButtonTypes } from "../types";
-import { StyledBtn } from "./style";
+import { StyledBtn, ArrowIcon } from "./style";
 
 export interface ButtonProps {
   variant: ButtonTypes;
@@ -14,7 +14,9 @@ const Button = ({ variant, onClick, withIcon, children }: ButtonProps) => {
   return (
     <StyledBtn className={btnVarient} onClick={onClick}>
       {children}
-      {withIcon && <img src={ArrowRightIcon} className="icon-primary-btn" />}
+      {withIcon && (
+        <ArrowIcon src={ArrowRightIcon} className="icon-primary-btn" />
+      )}
     </StyledBtn>
   );
 };
